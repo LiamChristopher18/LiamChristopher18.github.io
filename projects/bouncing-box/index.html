@@ -93,7 +93,10 @@
 			function handleBoxClick() {
 				location = 0;
 				changeBoxText(points);
-				speed = speed + 3
+				if (speed > 0) {
+					speed = speed + 3
+				}
+				else (speed - 3)
 
 
 				points = points + 1
